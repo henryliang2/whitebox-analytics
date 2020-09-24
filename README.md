@@ -4,4 +4,6 @@ Website under construction for [WhiteBox Analytics](https://ca.linkedin.com/comp
 
 At present, the team can be contacted at [Applied Quantitative Methods](http://www.aqm.io/) under 'For Firms'.
 
+See the live hosted project at [here](https://whiteboxanalytics.netlify.app)
+
 ![demo](demo.png)
