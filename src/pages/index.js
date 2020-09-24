@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import Navigation from '../components/Navigation';
 import LandingCard from '../components/LandingCard';
@@ -6,6 +6,32 @@ import SEO from "../components/seo"
 import '../styles/app.css'
 
 const IndexPage = () => {
+
+
+  // Get latest of Haihan's articles from Medium
+  const [landingInsight, setLandingInsight] = useState({});
+
+  useEffect(() => {
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hhl60492')
+    .then(results => results.json())
+    .then(data => {
+      const article = data.items[0].content;
+      console.log(article);
+      const doc = new DOMParser().parseFromString(article, 'text/html')
+      return doc;
+      
+    })
+    .then(doc => {
+      const snippet = doc.getElementsByClassName('medium-feed-snippet')[0].textContent;
+      const imgsrc = doc.getElementsByTagName('img')[0].src;
+      setLandingInsight({
+        snippet,
+        imgsrc
+      })
+    })
+  }, [])
+
+  // https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hhl60492
 
   const landingCards = [
     {
@@ -17,9 +43,9 @@ const IndexPage = () => {
     },
     {
       'header': 'Insights',
-      'imgsrc': 'NOAA.jpg',
-      'title': 'Analyzing Climate Patterns with Self-Organizing Maps (SOMs)',
-      'text': 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+      'imgsrc': landingInsight.imgsrc,
+      'title': landingInsight.snippet,
+      'text': ''
     },
     {
       'header': 'Success Stories',
