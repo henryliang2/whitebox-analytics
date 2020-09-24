@@ -38,8 +38,8 @@ const IndexPage = () => {
     <div className='landing'>
       <img className='landing__image' alt='landing' src='tensorflow_saddle.png' />
       <div className='landing__text-container'>
-        <p className='landing__text landing__text--bold'>Quantitative clarity to navigate an uncertain future.</p>
-        <p className='landing__text'>WhiteBox Analytics is a data science consulting firm handling the complete lifecycle of data science from talent management to R&D projects. We were founded on the vision that data science should empower the entire organization to make data driven decisions with robust methods.</p>
+        <p className='landing__text landing__text--bold'>Quantitative clarity to navigate an improbable future.</p>
+        <p className='landing__text'>WhiteBox Analytics is a data science consulting firm founded on the vision that data science should empower the entire organization to make data driven decisions with robust methods.</p>
       </div>
     </div>
 
