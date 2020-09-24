@@ -50,6 +50,22 @@
   margin-top: 6px;
 }
 
+.landingcard__cta {
+  font-family: 'Roboto Slab', 'Arial', 'sans-serif';
+  font-weight: 600;
+  text-align: right;
+}
+
+.landingcard__cta > a {
+  text-decoration: none;
+  color: #888;
+  transition: all 0.2s ease;
+}
+
+.landingcard__cta > a:hover {
+  color: #222;
+}
+
   /* Our Mission (First Landing Card) */
 
   .landingcard:first-of-type {

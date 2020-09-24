@@ -18,7 +18,9 @@ const LandingCard = (props) => {
 
       <div className='landingcard__text'>{ props.cardData.text }</div>
 
-      <div className='landingcard__text'>{ props.cardData.text2 }</div>
+      <div className='landingcard__cta'>
+        <a href={ props.cardData.url }>{ props.cardData.cta }</a>
+      </div>
     
     </div>
 

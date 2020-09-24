@@ -15,18 +15,23 @@ const IndexPage = () => {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hhl60492')
     .then(results => results.json())
     .then(data => {
-      const article = data.items[0].content;
-      console.log(article);
-      const doc = new DOMParser().parseFromString(article, 'text/html')
-      return doc;
+      const image = data.items[0].thumbnail;
+      const author = data.items[0].author;
+      const title = data.items[0].title;
+      const link = data.items[0].link;
+      const content = data.items[0].content;
+      const doc = new DOMParser().parseFromString(content, 'text/html')
+      return { title, image, link, author, doc };
       
     })
-    .then(doc => {
-      const snippet = doc.getElementsByClassName('medium-feed-snippet')[0].textContent;
-      const imgsrc = doc.getElementsByTagName('img')[0].src;
+    .then(data => {
+      const snippet = data.doc.getElementsByClassName('medium-feed-snippet')[0].textContent;
       setLandingInsight({
-        snippet,
-        imgsrc
+        title: data.title,
+        author: data.author,
+        imgsrc: data.image,
+        url: data.link,
+        snippet: snippet
       })
     })
   }, [])
@@ -38,20 +43,25 @@ const IndexPage = () => {
       'header': 'Our Mission',
       'imgsrc': '',
       'title': '',
-      'text': 'Whitebox Analytics was founded on the vision of empowering organizations with data driven decision making.',
-      'text2' : 'The backgrounds of our team members are diverse - ranging from physics to finance - but we share the common interest of understanding data.'
+      'text': 'Whitebox Analytics was founded on the vision of empowering organizations with data driven decision making. The backgrounds of our team members are diverse - ranging from physics to finance - but we share the common interest of understanding data.',
+      'cta': '',
+      'url': ''
     },
     {
-      'header': 'Insights',
+      'header': 'Insights from Our Team',
       'imgsrc': landingInsight.imgsrc,
-      'title': landingInsight.snippet,
-      'text': ''
+      'title': landingInsight.title,
+      'text': `${landingInsight.snippet}. Written by ${landingInsight.author}.`,
+      'cta': 'Read on Medium >>',
+      'url' : landingInsight.url
     },
     {
       'header': 'Success Stories',
       'imgsrc': 'skytrain-2.jpg',
       'title': 'Translink - Building the Future of Public Transport',
-      'text': 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.'
+      'text': 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.',
+      'cta': 'More Success Stories >>',
+      'url': '/portfolio'
     }
   ]
 
