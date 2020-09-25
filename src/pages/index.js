@@ -15,23 +15,14 @@ const IndexPage = () => {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hhl60492')
     .then(results => results.json())
     .then(data => {
-      const image = data.items[0].thumbnail;
-      const author = data.items[0].author;
-      const title = data.items[0].title;
-      const link = data.items[0].link;
       const content = data.items[0].content;
       const doc = new DOMParser().parseFromString(content, 'text/html')
-      return { title, image, link, author, doc };
-      
-    })
-    .then(data => {
-      const snippet = data.doc.getElementsByClassName('medium-feed-snippet')[0].textContent;
       setLandingInsight({
-        title: data.title,
-        author: data.author,
-        imgsrc: data.image,
-        url: data.link,
-        snippet: snippet
+        title: data.items[0].title,
+        author: data.items[0].author,
+        imgsrc: data.items[0].thumbnail,
+        url: data.items[0].link,
+        snippet: doc.getElementsByClassName('medium-feed-snippet')[0].textContent
       })
     })
   }, [])
@@ -48,7 +39,7 @@ const IndexPage = () => {
       'url': ''
     },
     {
-      'header': 'Insights from Our Team',
+      'header': 'Recent Insights',
       'imgsrc': landingInsight.imgsrc,
       'title': landingInsight.title,
       'text': `${landingInsight.snippet}. Written by ${landingInsight.author}.`,
