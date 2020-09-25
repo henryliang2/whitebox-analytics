@@ -11,10 +11,19 @@ h2 {
   font-size: 1.4em;
 }
 
-.container {
+.layout__container {
   width: 90vw;
   max-width: 1200px;
   margin: auto;
+}
+
+.layout__header {
+  padding: 48px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto Slab', 'Arial', 'sans-serif';
+  font-size: 1.6em;
+  font-weight: 600;
 }
 
 .landing {

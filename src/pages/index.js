@@ -57,7 +57,7 @@ const IndexPage = () => {
   ]
 
   return (
-  <div className='container'>
+  <div className='layout__container'>
 
     <SEO title="Home" />
     <Navigation />
