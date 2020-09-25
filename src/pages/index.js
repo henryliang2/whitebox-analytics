@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "gatsby";
 import Navigation from '../components/Navigation';
 import LandingCard from '../components/LandingCard';
 import SEO from "../components/seo"
@@ -15,14 +14,11 @@ const IndexPage = () => {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hhl60492')
     .then(results => results.json())
     .then(data => {
-      const content = data.items[0].content;
-      const doc = new DOMParser().parseFromString(content, 'text/html')
       setLandingInsight({
         title: data.items[0].title,
         author: data.items[0].author,
         imgsrc: data.items[0].thumbnail,
         url: data.items[0].link,
-        snippet: doc.getElementsByClassName('medium-feed-snippet')[0].textContent
       })
     })
   }, [])
@@ -42,7 +38,7 @@ const IndexPage = () => {
       'header': 'Recent Insights',
       'imgsrc': landingInsight.imgsrc,
       'title': landingInsight.title,
-      'text': `${landingInsight.snippet}. Written by ${landingInsight.author}.`,
+      'text': `by ${landingInsight.author}`,
       'cta': 'Read on Medium >>',
       'url' : landingInsight.url
     },

@@ -9,7 +9,6 @@ const InsightCard = (props) => {
   const day = pubDate.getDate();
   const month = pubDate.toLocaleString('default', { month: 'long' })
   const year = pubDate.getFullYear();
-  
 
   return (
     <div className='insightcard'>
@@ -21,7 +20,7 @@ const InsightCard = (props) => {
           <div className='insightcard__date'>{ `${month} ${day}, ${year}` }</div>
           <div className='insightcard__author'>{ `by ${props.author}` }</div>
           <div className='insightcard__cta'>
-            <a href={ props.link } target='_blank' rel='noopener noreferrer'>Read on Medium >></a>
+            <a href={ props.link } target='_blank' rel='noopener noreferrer'>{'Read on Medium >>'}</a>
           </div>
         </div>
       </div>
