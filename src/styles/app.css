@@ -33,6 +33,7 @@ h2 {
   display: grid;
   grid-template-columns: 2fr 3fr;
   align-items: center;
+  min-height: 65vh;
 }
 
 .landing__text-container {
