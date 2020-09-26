@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
 
 .insightcard {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+  max-width: 40vw;
   padding: 24px 0;
+  margin-bottom: 120px;
 }
 
 .insightcard__text {
@@ -15,7 +15,7 @@
   font-family: 'Roboto Slab', 'Arial', 'sans-serif';
   font-size: 0.8em;
   font-weight: 300;
-  color: #888;
+  color: #aaa;
 
   border-left: 1px solid #222;
 }
@@ -35,14 +35,23 @@
   color: black;
 }
 
+.insightcard__category {
+  margin: 12px 0;
+  font-size: 1em;
+  color: #aaa;
+}
+
 .insightcard__image {
-  min-height: 240px;
-  width: 100%;
+  min-height: 200px;
+  width: 80%;
   background-size: cover;
   background-position: center;
-  -webkit-box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
-  -moz-box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
-  box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
+  
+  /* -webkit-box-shadow: 6px 6px 12px 0px rgba(136,136,136,1);
+  -moz-box-shadow: 6px 6px 12px 0px rgba(136,136,136,1);
+  box-shadow: 6px 6px 12px 0px rgba(136,136,136,1); */
+
+  margin-bottom: 48px;
 }
 
 .insightcard__cta {

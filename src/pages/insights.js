@@ -14,12 +14,7 @@ const InsightsPage = () => {
     .then(results => results.json())
     .then(data => { 
       console.log(data.items)
-      const array = [];
-      for(let item of data.items) { // only want first 5 results
-        if (array.length <= 4 && item.categories.length) {
-          array.push(item)
-        }
-      }
+      const array = data.items.filter(item => item.categories.length > 0)
       setInsights(array) 
     })
   }, [])
@@ -30,7 +25,7 @@ const InsightsPage = () => {
     <SEO title="Insights" />
     <Navigation />
 
-    <div className='layout__header'>Recent Insights from Our Team</div>
+    <div className='layout__header'>Recent Insights</div>
 
     <div className='insightcard__container'>
       {
@@ -42,6 +37,7 @@ const InsightsPage = () => {
             author = { item.author }
             link = { item.link }
             content = { item.content }
+            categories = { item.categories }
           />
         )
       }

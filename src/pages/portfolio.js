@@ -34,7 +34,7 @@ const PortfolioPage = () => {
     <SEO title="Portfolio" />
     <Navigation />
 
-    <div className='layout__header'>See some of the work we've done</div>
+    <div className='layout__header'>We're Proud of Our Work</div>
 
     {
       items.map((item, i) => 

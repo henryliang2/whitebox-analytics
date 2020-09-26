@@ -10,10 +10,20 @@ const InsightCard = (props) => {
   const month = pubDate.toLocaleString('default', { month: 'long' })
   const year = pubDate.getFullYear();
 
+  const category = props.categories[0]
+    .split('-')
+    .map(word => {
+      const first = word[0].toUpperCase();
+      const rest = word.slice(1);
+      return `${first}${rest}`})
+    .join(' ')
+
   return (
     <div className='insightcard'>
+      <div className='insightcard__image' style={ {backgroundImage: `url(${props.thumbnail}`} }></div>
       <div className='insightcard__text'>
         <div className='insightcard__text-sub'>
+          <div className='insightcard__category'>{ category }</div>
           <div className='insightcard__title'>
             <a href={ props.link } target='_blank' rel='noopener noreferrer'>{ props.title }</a>
           </div>
@@ -24,7 +34,6 @@ const InsightCard = (props) => {
           </div>
         </div>
       </div>
-      <div className='insightcard__image' style={ {backgroundImage: `url(${props.thumbnail}`} }></div>
     </div>
   );
 
