@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navigation from '../components/Navigation';
+import Layout from '../components/Layout';
 import InsightCard from '../components/InsightCard';
 import SEO from "../components/seo";
 import '../styles/app.css';
@@ -20,10 +20,9 @@ const InsightsPage = () => {
   }, [])
 
   return (
-  <div className='layout__container'>
+  <Layout>
 
     <SEO title="Insights" />
-    <Navigation />
 
     <div className='layout__header'>Recent Insights</div>
 
@@ -43,7 +42,7 @@ const InsightsPage = () => {
       }
     </div>
 
-  </div>
+  </Layout>
 
   );
   

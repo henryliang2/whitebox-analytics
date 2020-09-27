@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from '../components/Navigation';
+import Layout from '../components/Layout';
 import PortfolioItem from '../components/PortfolioItem';
 import SEO from "../components/seo";
 import '../styles/app.css';
@@ -29,10 +29,9 @@ const PortfolioPage = () => {
   ]
 
   return (
-  <div className='layout__container'>
+  <Layout>
 
     <SEO title="Portfolio" />
-    <Navigation />
 
     <div className='layout__header'>We're Proud of Our Work</div>
 
@@ -49,7 +48,7 @@ const PortfolioPage = () => {
         />)
     }
 
-  </div>
+  </Layout>
 
   );
   

@@ -36,8 +36,12 @@ h2 {
   min-height: 65vh;
 }
 
+.landing__image {
+  width: 100%;
+}
+
 .landing__text-container {
-  padding: 80px;
+  padding: 120px;
 }
 
 .landing__text {

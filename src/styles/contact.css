@@ -40,12 +40,15 @@ label {
   font-family: 'Roboto Slab', 'Arial', 'sans-serif';
   font-size: 0.8em;
   font-weight: 300px;
+  margin-bottom: 6px;
 }
 
 input {
   display: block;
   width: 100%;
   margin-bottom: 24px;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 1em;
 }
 
 textarea {
@@ -53,4 +56,6 @@ textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 180px;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 1em;
 }

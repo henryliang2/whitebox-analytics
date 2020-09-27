@@ -1,17 +1,18 @@
 import React from "react";
-import Navigation from '../components/Navigation';
+import Layout from '../components/Layout';
 import SEO from "../components/seo";
 import '../styles/app.css';
 import '../styles/contact.css';
+import { TextField } from '@material-ui/core';
 import LogoSquare from './../../public/logo-square.png';
 
 const ContactPage = () => {
 
   return (
-  <div className='layout__container'>
+
+  <Layout>
 
     <SEO title="Contact" />
-    <Navigation />
 
       <div className='contact'>
         <div className='contact__brand-container'>
@@ -23,20 +24,32 @@ const ContactPage = () => {
 
           <div className='layout__header'>Get in touch with us</div>
 
-          <label>Organization</label>
-          <input type='text'></input>
+          <TextField 
+            label="Organization" 
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
 
-          <label>Email</label>
-          <input type='text'></input>
+          <TextField 
+            label="Email" 
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
 
-          <label>Message</label>
-          <textarea></textarea>
+          <TextField 
+            label="Message" 
+            multiline
+            rows={4}
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
         </div>
       </div>
   
-  </div>
-
-  
+    </Layout>
 
   );
   
