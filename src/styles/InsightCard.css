@@ -3,7 +3,7 @@
 .insightcard {
   max-width: 40vw;
   padding: 24px 0;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .insightcard__text {
@@ -39,11 +39,12 @@
   margin: 12px 0;
   font-size: 1em;
   color: #aaa;
+  font-weight: 400;
 }
 
 .insightcard__image {
-  min-height: 200px;
-  width: 80%;
+  min-height: 280px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   

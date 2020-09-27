@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact__brand-container {
+  width: 40vw;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./../../public/contact-bg.jpg');
+  background-size: cover;
+  filter:saturate(0.6);
+}
+
+.contact__brand {
+  width: 20vw;
+  height: 20vw;
+  padding: 20px;
+  display: flex;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.contact__brand > img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact__form {
+  justify-self: center;
+  width: 80%;
+}
+
+label {
+  display: block;
+  font-family: 'Roboto Slab', 'Arial', 'sans-serif';
+  font-size: 0.8em;
+  font-weight: 300px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 180px;
+}
