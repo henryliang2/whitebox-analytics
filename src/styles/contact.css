@@ -39,21 +39,21 @@
   border-radius: 4px;
   padding: 0 6px;
   padding-top: 2px;
-  background-color: #efefef;
+  background-color: #F2F2F2;
   margin-bottom: 24px;
 }
 
 .contact__inputbox {
-  background-color: #efefef;
+  background-color: #F2F2F2;
   border: none;
   transition: all 0.2s ease;
-  border-bottom: 2px solid #efefef;
+  border-bottom: 2px solid #F2F2F2;
 }
 
 .contact__inputbox:focus {
   outline: none;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #222;
 }
 
 label {
