@@ -62,6 +62,7 @@ const IndexPage = () => {
         <div className='landing__text-container'>
           <p className='landing__text landing__text--bold'>Quantitative clarity to navigate an improbable future.</p>
           <p className='landing__text'>WhiteBox Analytics is a data science consulting firm founded on the vision that data science should empower the entire organization to make data driven decisions with robust methods.</p>
+          <div className='landing__cta'><a href='/portfolio'><button className='cta-button'>Our Work →</button></a></div>
         </div>
       </div>
 

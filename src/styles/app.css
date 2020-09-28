@@ -66,3 +66,28 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
+
+.cta-button {
+  margin-top: 12px;
+  min-width: 140px;
+  height: 40px;
+  background: #222;
+  color: white;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 0.9em;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #888;
+}
+
+.cta-button--white {
+  background-color: white;
+  color: #222;
+}
