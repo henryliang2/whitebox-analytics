@@ -3,13 +3,11 @@ import Layout from '../components/Layout';
 import SEO from "../components/seo";
 import '../styles/app.css';
 import '../styles/contact.css';
-import { TextField } from '@material-ui/core';
 import LogoSquare from './../../public/logo-square.png';
 
 const ContactPage = () => {
 
   return (
-
   <Layout>
 
     <SEO title="Contact" />
@@ -24,28 +22,21 @@ const ContactPage = () => {
 
           <div className='layout__header'>Get in touch with us</div>
 
-          <TextField 
-            label="Organization" 
-            InputLabelProps={{
-              shrink: true,
-            }}
-          />
+          <div className='contact__inputfield'>
+            <label for='org' className='contact__label'>Organization</label>
+            <input name='org' className='contact__inputbox' type='text' />
+          </div>
 
-          <TextField 
-            label="Email" 
-            InputLabelProps={{
-              shrink: true,
-            }}
-          />
+          <div className='contact__inputfield'>
+            <label for='email' className='contact__label'>Email</label>
+            <input name='email' className='contact__inputbox' type='email' />
+          </div>
 
-          <TextField 
-            label="Message" 
-            multiline
-            rows={4}
-            InputLabelProps={{
-              shrink: true,
-            }}
-          />
+          <div className='contact__inputfield'>
+            <label for='message' className='contact__label'>Message</label>
+            <textarea name='message' className='contact__inputbox' type='text' />
+          </div>
+          
         </div>
       </div>
   

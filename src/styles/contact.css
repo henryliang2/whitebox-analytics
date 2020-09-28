@@ -35,10 +35,30 @@
   width: 80%;
 }
 
+.contact__inputfield {
+  padding: 0 6px;
+  padding-top: 2px;
+  background-color: #efefef;
+  margin-bottom: 24px;
+}
+
+.contact__inputbox {
+  background-color: #efefef;
+  border: none;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid #efefef;
+}
+
+.contact__inputbox:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
 label {
   display: block;
   font-family: 'Roboto Slab', 'Arial', 'sans-serif';
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 300px;
   margin-bottom: 6px;
 }
@@ -55,7 +75,7 @@ textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-  min-height: 180px;
+  min-height: 200px;
   font-family: 'Arial', 'sans-serif';
   font-size: 1em;
 }
