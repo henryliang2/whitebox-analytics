@@ -13,7 +13,6 @@ const InsightsPage = () => {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hhl60492')
     .then(results => results.json())
     .then(data => { 
-      console.log(data.items)
       const array = data.items.filter(item => item.categories.length > 0)
       setInsights(array) 
     })

@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import LandingCard from '../components/LandingCard';
 import SEO from "../components/seo"
 import '../styles/app.css'
+import TensorFlowSaddle from '../../public/tensorflow_saddle.png';
 
 const IndexPage = () => {
 
@@ -57,7 +58,7 @@ const IndexPage = () => {
       <SEO title="Home" />
 
       <div className='landing'>
-        <img className='landing__image' alt='landing' src='tensorflow_saddle.png' />
+        <img className='landing__image' alt='landing' src={ TensorFlowSaddle } />
         <div className='landing__text-container'>
           <p className='landing__text landing__text--bold'>Quantitative clarity to navigate an improbable future.</p>
           <p className='landing__text'>WhiteBox Analytics is a data science consulting firm founded on the vision that data science should empower the entire organization to make data driven decisions with robust methods.</p>
