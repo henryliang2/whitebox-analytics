@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
 
 .insightcard {
-  max-width: 40vw;
+  width: 100%;
   padding: 24px 0;
   margin-bottom: 60px;
 }
@@ -10,14 +10,17 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 80px;
 
   font-family: 'Roboto Slab', 'Arial', 'sans-serif';
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 300;
   color: #aaa;
 
   border-left: 1px solid #222;
+}
+
+.insightcard__text-sub {
+  padding: 40px;
 }
 
 .insightcard__title {
@@ -27,6 +30,7 @@
 }
 
 .insightcard__title > a {
+  overflow-wrap: normal;
   text-decoration: none;
   color: #555;
 }
@@ -44,7 +48,7 @@
 
 .insightcard__image {
   min-height: 280px;
-  width: 100%;
+  width: 80%;
   background-size: cover;
   background-position: center;
   

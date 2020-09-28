@@ -18,7 +18,8 @@ h2 {
 }
 
 .layout__header {
-  padding: 48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   width: 100%;
   text-align: center;
   font-family: 'Roboto Slab', 'Arial', 'sans-serif';
