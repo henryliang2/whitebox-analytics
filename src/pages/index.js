@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import LandingCard from '../components/LandingCard';
 import SEO from "../components/seo"
 import '../styles/app.css'
