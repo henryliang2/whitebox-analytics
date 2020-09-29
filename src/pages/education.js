@@ -1,17 +1,18 @@
 import React from "react";
-import Navigation from '../components/Navigation';
+import Layout from '../components/layout'
 import SEO from "../components/seo";
 import '../styles/app.css';
+import '../styles/education.css';
 
 const EducationPage = () => {
 
   return (
-  <div className='container'>
+  <Layout>
+    <SEO title="Education" />
+    <div className='layout__header'>Education</div>
+    <div className='education__jumbo'></div>
 
-  <SEO title="Education" />
-  <Navigation />
-
-  </div>
+  </Layout>
 
   );
   
