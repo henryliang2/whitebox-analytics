@@ -16,8 +16,8 @@ const Footer = () => {
             <img src='./logo-dark.png' alt='Footer Logo'/>
 
             <div className='footer__address'>
-              123 Bautista Road, <br/>
-              Vancouver, BC &nbsp;&nbsp;&nbsp; V1V 1V1 <br/><br/>
+              2300 - 550 Burrard St <br/>
+              Vancouver, BC &nbsp;&nbsp;&nbsp; V6C 2B5 <br/><br/>
               example@gmail.com
             </div>
 
