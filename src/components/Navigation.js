@@ -7,10 +7,10 @@ const Navigation = () => {
     <nav>
       <Link to="/"><img alt='logo' src='/logo.png'/></Link>
       <div>
-        <a href='/portfolio'>Portfolio</a>
-        <a href='/insights'>Insights</a>
-        <a href='/about'>About</a>
-        <a href='/education'>Education</a>
+        <Link to='/portfolio'>Portfolio</Link>
+        <Link to='/insights'>Insights</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/education'>Education</Link>
         <Link to="/contact">Contact</Link>
       </div>
     </nav>
