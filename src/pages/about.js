@@ -9,21 +9,21 @@ const AboutPage = () => {
   const profiles = [
     {
       name: 'Dharu Ravi',
-      imgsrc: './dharu.webp',
+      imgsrc: './../dharu.webp',
       credentials: 'BCom. Operations Research ',
-      desc: 'Dharu brings extensive experience in managing large, complex, cross-functional software and data projects. Dharu is responsible for securing and managing the capstone projects as well as building the Vancouver data science community.'
+      desc: 'Dharu brings extensive experience in managing large, complex, cross-functional software and data projects.'
     },
     {
       name: 'Dustin Johnson',
-      imgsrc: './dustin.webp',
+      imgsrc: './../dustin.webp',
       credentials: 'MSc. Statistics',
-      desc: 'Currently a full-time data scientist, Dustin brings a solid statistical background and an in-depth understanding of the latest tools and techniques to analyze data. He is the driving force behind AQM’s vision and long-term goals.'
+      desc: 'Currently a full-time data scientist, Dustin is the driving force behind WhiteBox Analytics’ vision and long-term goals.'
     },
     {
       name: 'Haihan Lan',
-      imgsrc: './haihan.webp',
+      imgsrc: './../haihan.webp',
       credentials: 'BASc. Electrical Engineering',
-      desc: 'Currently a full-time data scientist with extensive experience developing systems software, Haihan brings a solid working understanding of programming in C++, C# and various other languages. He is also a published researcher in the field of Applied Mathematics.'
+      desc: 'Currently a full-time data scientist with extensive experience developing systems software. He is also a published researcher in Applied Mathematics.'
     },
   ]
 
@@ -31,14 +31,14 @@ const AboutPage = () => {
   <Layout>
   <SEO title="About" />
 
-    <div className='layout__header'>Our Team</div>
+    <div className='layout__header'>Meet Our Team</div>
   
     <div className='profilecard__container'>
 
       {
         profiles.map(profile => 
           <div className='profilecard'>
-            <div className='profilecard__image'><img src={ profile.imgsrc } /></div>
+            <div className='profilecard__image'><img src={ profile.imgsrc } alt={`${profile.name}-profile`}/></div>
             <div className='profilecard__name'>{ profile.name }</div>
             <div className='profilecard__credentials'>{ profile.credentials }</div>
             <div className='profilecard__desc'>{ profile.desc }</div>
@@ -46,6 +46,12 @@ const AboutPage = () => {
         )
       }
 
+    </div>
+
+    <div className='layout__header'>Lorem Ipsum Dolor</div>
+
+    <div className='layout__subtext'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </div>
 
   </Layout>

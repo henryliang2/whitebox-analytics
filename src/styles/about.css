@@ -4,14 +4,13 @@
 }
 
 .profilecard {
-  padding: 24px;
+  padding: 48px;
   text-align: center;
   display: inline-block;
   font-family: 'Roboto Slab', 'Arial', sans-serif;
   font-size: 0.9em;
   font-weight: 300;
   color: #222;
-  border-left: 1px solid #222;
 }
 
 .profilecard__image > img {
@@ -27,7 +26,13 @@
   font-weight: 400;
 }
 
+.profilecard__credentials {
+  font-size: 0.9em;
+  color: #888;
+}
+
 .profilecard__desc {
   margin-top: 12px;
   text-align: left;
+  color: #888;
 }

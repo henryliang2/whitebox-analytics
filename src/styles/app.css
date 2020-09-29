@@ -29,6 +29,17 @@ h2 {
   color: #222;
 }
 
+.layout__subtext {
+  text-align: center;
+  max-width: 800px;
+  font-family: 'Roboto Slab', 'Arial', 'sans-serif';
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #222;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
 .landing {
   padding: 0px 20px;
   width: 100%;
