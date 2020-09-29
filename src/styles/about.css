@@ -1,0 +1,33 @@
+.profilecard__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profilecard {
+  padding: 24px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Roboto Slab', 'Arial', sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #222;
+  border-left: 1px solid #222;
+}
+
+.profilecard__image > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.profilecard__name {
+  margin-top: 12px;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.profilecard__desc {
+  margin-top: 12px;
+  text-align: left;
+}
