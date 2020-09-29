@@ -6,8 +6,11 @@
 }
 
 .contact__brand-container {
-  width: 40vw;
-  height: 40vw;
+  justify-self: center;
+  width: 600px;
+  height: 600px;
+  max-width: 40vw;
+  max-height: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +20,8 @@
 }
 
 .contact__brand {
-  width: 20vw;
-  height: 20vw;
+  width: 240px;
+  height: 240px;
   padding: 20px;
   display: flex;
   background: white;
@@ -54,6 +57,15 @@
   outline: none;
   border: none;
   border-bottom: 2px solid #222;
+}
+
+.contact__inputbox:invalid {
+  outline: 0;
+  border: 0;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  border-bottom: 2px solid red;
 }
 
 label {

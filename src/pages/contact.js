@@ -23,18 +23,18 @@ const ContactPage = () => {
           <div className='layout__header'>Get in touch with us</div>
 
           <div className='contact__inputfield'>
-            <label htmlFor='organization' className='contact__label'>Organization</label>
-            <input name='organization' id='organization' className='contact__inputbox' type='text' />
+            <label htmlFor='organization' className='contact__label'> Organization</label>
+            <input name='organization' id='organization' className='contact__inputbox' type='text'/>
           </div>
 
           <div className='contact__inputfield'>
-            <label htmlFor='email' className='contact__label'>Email</label>
-            <input name='email' id='email'className='contact__inputbox' type='email' />
+            <label htmlFor='email' className='contact__label'> Email</label>
+            <input name='email' id='email'className='contact__inputbox' type='email'/>
           </div>
 
           <div className='contact__inputfield'>
-            <label htmlFor='message' className='contact__label'>Message</label>
-            <textarea name='message' id='message' className='contact__inputbox' type='text' />
+            <label htmlFor='message' className='contact__label'> Message</label>
+            <textarea name='message' id='message' className='contact__inputbox' type='text'/>
           </div>
           
         </div>
