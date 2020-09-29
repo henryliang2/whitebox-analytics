@@ -5,3 +5,44 @@
   color: white;
   margin-top: 60px;
 }
+
+.footer__inner {
+  min-height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__inner > img {
+  width: 200px;
+}
+
+.footer__address {
+  font-family: 'Roboto Slab', 'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  margin: 0px 20px;
+  color: #888;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__links > a {
+  font-family: 'Roboto Slab' ,'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0px 20px;
+  color: #888;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #222;
+}
+
+.footer__links > a:hover {
+  border-bottom: 1px solid #888;
+}
