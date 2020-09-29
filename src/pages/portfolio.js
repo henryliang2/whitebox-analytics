@@ -9,13 +9,13 @@ const PortfolioPage = () => {
   const items = [
     {
       'company': 'Lululemon Athletica',
-      'text': 'We were consulted by Lululemon Athletica to help improve their technical clothing line, applying machine learning techniques to model the anatomy and biomechanics of the human body.',
+      'text': 'We were brought into Lululemon’s R&D lab to apply advanced data science techniques to the research of human motion. Our primary focus was to develop novel methods to analyze the biometric data of runners. A collaborative effort led to some key discoveries in body movement and apparel comfort. These discoveries have defined critical metrics for the construction of apparel within the company.',
       'brandImgUrl': './../lululemon.png',
       'portfolioImgUrl': './../lululemon-portfolio.jpg'
     },
     {
       'company': 'Translink',
-      'text': 'We worked with Translink, the municipal public transport authority for the Vancouver area, to help discover pain points and sources of congestion in Vancouver',
+      'text': 'WhiteBox was asked to help understand ridership using transportation and social media data. We have been collaborating over the past 4 years in building the future of public transportation. Translink won the APTA 2019 Outstanding Public Transportation System Achievement Award. This award represents the largest transportation systems in North America: providing 20 million or more annual passenger trips.',
       'brandImgUrl': './../translink.png',
       'portfolioImgUrl': './../translink-portfolio.jpg'
     },
