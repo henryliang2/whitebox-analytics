@@ -1,12 +1,15 @@
 .footer {
   width: 100%;
-  min-height: 160px;
+  height: 160px;
   background-color: #222;
   color: white;
   margin-top: 60px;
 }
 
 .footer__inner {
+  width: 90vw;
+  max-width: 1280px;
+  margin: auto;
   min-height: 160px;
   display: flex;
   justify-content: space-between;
