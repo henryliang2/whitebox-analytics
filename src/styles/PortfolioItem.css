@@ -4,9 +4,6 @@
   display: flex;
   max-height: 80vh;
   margin-bottom: 80px;
-  -webkit-box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
-  -moz-box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
-  box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
 }
 
 .portfolio-item__text-container {
@@ -17,7 +14,6 @@
   font-size: 1.2em;
   color: #222;
   text-align: center;
-  background: #F2F2F2;
 }
 
 .portfolio-item__brand > img {
@@ -36,6 +32,9 @@
 
 .portfolio-item__image {
   width: 100%;
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
+  box-shadow: 10px 10px 12px 0px rgba(136,136,136,1);
 }
 
 .portfolio-item__image > img {

@@ -57,22 +57,26 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
 
-      <div className='landing'>
-        <img className='landing__image' alt='landing' src={ TensorFlowSaddle } />
-        <div className='landing__text-container'>
-          <p className='landing__text landing__text--bold'>Quantitative clarity to navigate an improbable future.</p>
-          <p className='landing__text'>WhiteBox Analytics is a data science consulting firm founded on the vision that data science should empower the entire organization to make data driven decisions with robust methods.</p>
-          <div className='landing__cta'><a href='/portfolio'><button className='cta-button'>Our Work →</button></a></div>
-        </div>
-      </div>
+      <div className='layout__container'>
 
-      <div className='landingcard__container'>
-        { 
-          landingCards.map((card, i) => 
-            <LandingCard key={i} cardData={ landingCards[i] } />
-          ) 
-        }
-      </div>   
+        <div className='landing'>
+          <img className='landing__image' alt='landing' src={ TensorFlowSaddle } />
+          <div className='landing__text-container'>
+            <p className='landing__text landing__text--bold'>Quantitative clarity to navigate an improbable future.</p>
+            <p className='landing__text'>WhiteBox Analytics is a data science consulting firm founded on the vision that data science should empower the entire organization to make data driven decisions with robust methods.</p>
+            <div className='landing__cta'><a href='/portfolio'><button className='cta-button'>Our Work →</button></a></div>
+          </div>
+        </div>
+
+        <div className='landingcard__container'>
+          { 
+            landingCards.map((card, i) => 
+              <LandingCard key={i} cardData={ landingCards[i] } />
+            ) 
+          }
+        </div>   
+
+      </div>
     </Layout> 
 )}
 

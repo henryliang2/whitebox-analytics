@@ -12,6 +12,8 @@ const ContactPage = () => {
 
     <SEO title="Contact" />
 
+    <div className='layout__container'>
+
       <div className='contact'>
         <div className='contact__brand-container'>
           <div className='contact__brand'>
@@ -39,6 +41,8 @@ const ContactPage = () => {
           
         </div>
       </div>
+
+    </div>
   
     </Layout>
 

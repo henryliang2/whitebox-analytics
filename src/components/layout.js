@@ -7,10 +7,8 @@ const Layout = ({ children }) => {
 
   return (
     <React.Fragment>
-        <div className='layout__container'>
-          <Navigation />
+      <Navigation />
           { children }
-        </div>
       <Footer />
     </React.Fragment>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from '../components/layout';
+import Jumbo from '../components/Jumbo';
 import PortfolioItem from '../components/PortfolioItem';
 import SEO from "../components/seo";
 import '../styles/app.css';
@@ -20,6 +21,12 @@ const PortfolioPage = () => {
       'portfolioImgUrl': './../translink-portfolio.jpg'
     },
     {
+      'company': 'Best Buy',
+      'text': 'Best Buy wanted a deep dive of their brand sentiment on social media platforms. Their priority was an analysis of brand sentiment using machine learning and the optimization of social media posts. We built a sentiment predictor that outperformed any publicly available models and recommended tweet composition strategies to increase tweet exposure. Our tweet composition strategies had predicted cost savings of over $150k+ in comparison to paid ads.',
+      'brandImgUrl': './../bestbuy.svg',
+      'portfolioImgUrl': './../bestbuy-portfolio.jpg'
+    },
+    {
       'company': 'Save-On-Foods',
       'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       'brandImgUrl': './../save-on-foods.svg',
@@ -33,20 +40,30 @@ const PortfolioPage = () => {
 
     <SEO title="Portfolio" />
 
-    <div className='layout__header'>We're Proud of Our Work</div>
+    <Jumbo 
+      header = "We're Proud of Our Work."
+      text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
+      imgsrc = './../portfolio-jumbo.jpg'  
+    />
 
-    {
-      items.map((item, i) => 
-      
-        <PortfolioItem 
-          key={i}
-          company = { item.company }
-          text = { item.text }
-          brandImgUrl = { item.brandImgUrl }
-          portfolioImgUrl = { item.portfolioImgUrl }
-          isEven = { i % 2 === 0 }
-        />)
-    }
+    <div className='layout__container'>
+
+      <div className='layout__header'>Success Stories</div>
+
+      {
+        items.map((item, i) => 
+        
+          <PortfolioItem 
+            key={i}
+            company = { item.company }
+            text = { item.text }
+            brandImgUrl = { item.brandImgUrl }
+            portfolioImgUrl = { item.portfolioImgUrl }
+            isEven = { i % 2 === 0 }
+          />)
+      }
+
+    </div>
 
   </Layout>
 

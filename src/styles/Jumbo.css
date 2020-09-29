@@ -1,0 +1,39 @@
+.jumbo {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.jumbo__background {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.jumbo__header {
+  padding-bottom: 24px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto Slab', 'Arial', 'sans-serif';
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.jumbo__text {
+  text-align: center;
+  max-width: 800px;
+  font-family: 'Roboto Slab', 'Arial', 'sans-serif';
+  font-size: 1.4em;
+  font-weight: 300;
+  margin: auto;
+}

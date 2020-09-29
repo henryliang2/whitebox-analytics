@@ -21,24 +21,28 @@ const InsightsPage = () => {
   return (
   <Layout>
 
+    <div className='layout__container'>
+
     <SEO title="Insights" />
 
-    <div className='layout__header'>Recent Insights</div>
+      <div className='layout__header'>Recent Insights</div>
 
-    <div className='insightcard__container'>
-      {
-        insights.map((item, i) => 
-          <InsightCard key={i}
-            title = { item.title }
-            thumbnail = { item.thumbnail }
-            pubDate = { item.pubDate }
-            author = { item.author }
-            link = { item.link }
-            content = { item.content }
-            categories = { item.categories }
-          />
-        )
-      }
+      <div className='insightcard__container'>
+        {
+          insights.map((item, i) => 
+            <InsightCard key={i}
+              title = { item.title }
+              thumbnail = { item.thumbnail }
+              pubDate = { item.pubDate }
+              author = { item.author }
+              link = { item.link }
+              content = { item.content }
+              categories = { item.categories }
+            />
+          )
+        }
+      </div>
+
     </div>
 
   </Layout>
